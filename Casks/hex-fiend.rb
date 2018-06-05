@@ -5,9 +5,11 @@ cask 'hex-fiend' do
   # github.com/ridiculousfish/HexFiend was verified as official when first introduced to the cask
   url "https://github.com/ridiculousfish/HexFiend/releases/download/v#{version}/Hex_Fiend_#{version.major_minor}.dmg"
   appcast 'https://github.com/ridiculousfish/HexFiend/releases.atom',
-          checkpoint: '356d40d0edce7acc0a69f8113ed7a39a0eba16846d384f4b5907ae9498500755'
+          checkpoint: 'cd523fdd9bb2b5222dfd5b276aa1cfdb10dfa3ed0e798d78ba3fc771d7208478'
   name 'Hex Fiend'
   homepage 'http://ridiculousfish.com/hexfiend/'
+
+  conflicts_with cask: 'hex-fiend-beta'
 
   app 'Hex Fiend.app'
   binary "#{appdir}/Hex Fiend.app/Contents/Resources/hexf"

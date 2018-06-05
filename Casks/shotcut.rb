@@ -1,11 +1,11 @@
 cask 'shotcut' do
-  version '18.01.02'
-  sha256 '12ee301b211dba6d0aa062587d0ec2e673980570273faeb41b25083b5cdd49c9'
+  version '18.05.08'
+  sha256 '066b768d5986e7d1ee7c6ead0aa28d27e6a6ba5b774f4528c3a7ba5aa4ca32ae'
 
   # github.com/mltframework/shotcut was verified as official when first introduced to the cask
   url "https://github.com/mltframework/shotcut/releases/download/v#{version.major_minor}/shotcut-osx-x86_64-#{version.no_dots}.dmg"
   appcast 'https://github.com/mltframework/shotcut/releases.atom',
-          checkpoint: '81e23e46cd9363d1b519dd1c755960501e66dcac70cf73b269930108356de701'
+          checkpoint: '43f62dad679bdcebffc40635a45e583b6f8acbdf105e5c6a100c238008d175d7'
   name 'Shotcut'
   homepage 'https://www.shotcut.org/'
 

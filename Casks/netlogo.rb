@@ -1,10 +1,10 @@
 cask 'netlogo' do
-  version '6.0.2'
-  sha256 '952954567aeed7da12340e024718e4ff62e2ee3cfcb7d8270845e07de0f26e80'
+  version '6.0.3'
+  sha256 '5cccdfaff8af4f5556cf211f0bfe6e8c08ae7f17456932c8903125106acdf351'
 
   url "https://ccl.northwestern.edu/netlogo/#{version}/NetLogo-#{version}.dmg"
   appcast 'https://ccl.northwestern.edu/netlogo/oldversions.shtml',
-          checkpoint: '3dee474eb1e89e0db506c115172b236f2c2b41b5d4d9c58238f6dd8cd5c1a3b8'
+          checkpoint: 'b0ff96ad08709796d91ff19f1525f9059b3fa36a9e38e8da8c1293d980a8b5ef'
   name 'NetLogo'
   homepage 'https://ccl.northwestern.edu/netlogo/'
 

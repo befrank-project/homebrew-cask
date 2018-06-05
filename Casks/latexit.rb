@@ -1,11 +1,11 @@
 cask 'latexit' do
-  version '2.9.0'
-  sha256 'ce6b9945fc9afb8fe820552f862ecc3ed0a69b15cda9c62f7780b219333f9b23'
+  version '2.10.1'
+  sha256 '13e8cad21d51cb466c1d48e2f1b03a5dd541928c534fc5022e7d4e4cb2425895'
 
   url "https://www.chachatelier.fr/latexit/downloads/LaTeXiT-#{version.dots_to_underscores}.dmg",
       user_agent: :fake
   appcast 'https://pierre.chachatelier.fr/latexit/downloads/latexit-sparkle-en.rss',
-          checkpoint: '946ab8e24300a0dbbb909d1253f395ca01727e9da797b97c05c73a8fc4212d52'
+          checkpoint: 'cc4dd3469b0bbc90d0dd61bbacf4a726295c9919c066c622ae6fd3712b1a7667'
   name 'LaTeXiT'
   homepage 'https://www.chachatelier.fr/latexit/'
 

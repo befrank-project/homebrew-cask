@@ -1,14 +1,14 @@
 cask 'dawnlabs-alchemy' do
-  version '0.2.0'
-  sha256 'b0ca088c768d5a57cb0f6af36b350e39a973efa0c708492b39813a85e780b918'
+  version '0.4.1'
+  sha256 '0034f844f547cddf1a06a7227aa80710c2253a3a1f76f0a231b8cc8508a54540'
 
-  url "https://github.com/dawnlabs/alchemy/releases/download/#{version}/Alchemy-darwin-x64.zip"
+  url "https://github.com/dawnlabs/alchemy/releases/download/#{version}/Alchemy-mac.zip"
   appcast 'https://github.com/dawnlabs/alchemy/releases.atom',
-          checkpoint: 'adb171e7d3a8c14df0393d0c9ab94f712619ae694fa28154e8beb65597bdfe0f'
+          checkpoint: '2d5f8938b10c9cef7666d3f06079252334e3cf4d186b7724642086a05a902825'
   name 'Alchemy'
   homepage 'https://github.com/dawnlabs/alchemy'
 
-  app 'Alchemy-darwin-x64/Alchemy.app'
+  app 'Alchemy.app'
 
   uninstall signal: ['TERM', 'com.electron.alchemy']
 end

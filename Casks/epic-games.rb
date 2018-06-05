@@ -1,13 +1,23 @@
 cask 'epic-games' do
-  version '2.12.24-3321064'
-  sha256 'b1e37a5ff042fb5e13cd904d71acb14496bd65036612a726ff3b509947779c1d'
+  # Auto-updates to a newer version than available on the homepage.
+  # Latest version is posted to the forum:
+  # https://forums.unrealengine.com/unreal-engine/announcements-and-releases/1928-latest-launcher-release-notes
+  version '7.10.1'
+  sha256 '36078458b4540f6b3315972b1bbd846d7d063d5eb1456b1d4bed0aa91f95037e'
 
-  # epicgames.com was verified as official when first introduced to the cask
-  url "https://download.epicgames.com/Builds/UnrealEngineLauncher/Installers/EpicGamesLauncher-#{version}.dmg"
+  url "https://download-dynamic.epicgames.com/Builds/UnrealEngineLauncher/Installers/EpicInstaller-#{version}.dmg"
   name 'Epic Games Launcher'
-  homepage 'https://www.unrealengine.com/what-is-unreal-engine-4'
+  homepage 'https://www.epicgames.com/'
+
+  auto_updates true
 
   app 'Epic Games Launcher.app'
 
-  zap trash: '~/Library/Caches/com.epicgames.EpicGamesLauncher'
+  zap trash: [
+               '~/Library/Caches/com.epicgames.EpicGamesLauncher',
+               '~/Library/Application Support/Epic',
+               '~/Library/Cookies/com.epicgames.EpicGamesLauncher.binarycookies',
+               '~/Library/Logs/Unreal Engine/EpicGamesLauncher',
+               '~/Library/Preferences/Unreal Engine/EpicGamesLauncher',
+             ]
 end

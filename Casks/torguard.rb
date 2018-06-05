@@ -1,11 +1,11 @@
 cask 'torguard' do
-  version '0.3.78'
-  sha256 '69480ae4aced2af826276ff67ab5b57a084bae985de11aeb166e1f76f1594524'
+  version '3.85.0'
+  sha256 'e3200827a3d001e5f75334ec63cd24b616382d4104ed8dbfbc3572cd9bc71c05'
 
   # torguard.biz was verified as official when first introduced to the cask
   url "https://updates.torguard.biz/Software/MacOSX/TorGuard-v#{version}.dmg"
   appcast 'https://updates.torguard.biz/Software/MacOSX/checksums.sha256',
-          checkpoint: '55da4751d30fa6e76140f8b82ad92729e430b1e56aab2d7e09627f7ab6888372'
+          checkpoint: '2bb225e8c50dc7a8cb1b807458aef56210aada881bb3465c839ab657593b014b'
   name 'TorGuard'
   homepage 'https://torguard.net/'
 

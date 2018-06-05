@@ -1,11 +1,11 @@
 cask 'inboxer' do
-  version '1.0.2'
-  sha256 'd60a7f25209602041cfb6e66c09c839a7068894daab7edc6205dbd10847c57bd'
+  version '1.1.2'
+  sha256 '5e3ae2901946f1fae8b2a54fd8b488b57674d921742f16e8bd8ac16bcef973ea'
 
   # github.com/denysdovhan/inboxer was verified as official when first introduced to the cask
   url "https://github.com/denysdovhan/inboxer/releases/download/v#{version}/inboxer-#{version}-mac.zip"
   appcast 'https://github.com/denysdovhan/inboxer/releases.atom',
-          checkpoint: '2c7ba053eab9a808222369960b35deac26569c4f38f2933f9b13a87fd35b6f7f'
+          checkpoint: 'b4a6299ac687536a6d611f1d6134d94c7cc62ae7a0609073ce575de815882fec'
   name 'inboxer'
   homepage 'https://denysdovhan.com/inboxer'
 

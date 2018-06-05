@@ -1,11 +1,11 @@
 cask 'flash-player' do
-  version '28.0.0.161'
-  sha256 'be937350ca7324b6959eb5954ff03daa48d1ba7a2a16ba5fa8342383d5cc058b'
+  version '29.0.0.171'
+  sha256 'b1e38e3d0e2a31a7facbcee16146aba63d0d18d24b9b755b9342f5d32366c9b4'
 
   # macromedia.com was verified as official when first introduced to the cask
   url "https://fpdownload.macromedia.com/pub/flashplayer/updaters/#{version.major}/flashplayer_#{version.major}_sa.dmg"
   appcast 'http://fpdownload2.macromedia.com/get/flashplayer/update/current/xml/version_en_mac_pl.xml',
-          checkpoint: '9328b81a03aa632970cd96be9f1d58a573a5e376debed48a59ab76e186e9786f'
+          checkpoint: 'a8b1088272513abecdf52195eed55c7e5247ec8bc82de741c3aa1060099220be'
   name 'Adobe Flash Player projector'
   homepage 'https://www.adobe.com/support/flashplayer/debug_downloads.html'
 

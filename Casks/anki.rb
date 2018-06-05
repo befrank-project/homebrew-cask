@@ -1,10 +1,10 @@
 cask 'anki' do
-  version '2.0.49'
-  sha256 '5f7ab941bdbb0da7b501742163064d695c23331a883eb00af6c4025f62b7e914'
+  version '2.0.52'
+  sha256 '468814d16ad3146e5551e5a7c5c2fff7f0f0301c1c7dc5fdaa8a049732e054c9'
 
   url "https://apps.ankiweb.net/downloads/current/anki-#{version}.dmg"
   appcast 'https://apps.ankiweb.net/docs/changes.html',
-          checkpoint: '12c804efe58cdcf247b67f332f29c975b6e0082eb6ef643ecf05d2b5dab7f8f5'
+          checkpoint: 'fb44d6a18a4d4e75b6936196b6443447df27202872a5a7aaf5ecb89321bc8473'
   name 'Anki'
   homepage 'https://apps.ankiweb.net/'
 

@@ -1,11 +1,11 @@
 cask 'bitshares' do
-  version '2.0.180215'
-  sha256 '07e3992a7cb82424b498979f324ec4590a5bb6dfc8258d43f3b8b2acf5ce20c4'
+  version '2.0.180526'
+  sha256 'bc8f7d9a5d21c2c032f30f065eab4fa58a870ae95c1d38dcc2245bb06c2b6a51'
 
   # github.com/bitshares/bitshares-ui was verified as official when first introduced to the cask
   url "https://github.com/bitshares/bitshares-ui/releases/download/#{version}/BitShares-#{version}.dmg"
   appcast 'https://github.com/bitshares/bitshares-ui/releases.atom',
-          checkpoint: '9d734ddfd2b917e0a9f907b049a92eda89fd115c3a2e2187e5f5119f4e6de2ac'
+          checkpoint: '20827331fc4a19cdb7457c605567f8308eb636c1f71e86fd1da334e3274ae4c8'
   name 'BitShares'
   homepage 'https://bitshares.org/'
 

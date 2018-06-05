@@ -1,10 +1,10 @@
 cask 'xscreensaver' do
-  version '5.38'
-  sha256 '5e302bc958b7329721951710d3d052dc8b74ba337bb4f7d80af14d2593e63b20'
+  version '5.39'
+  sha256 '099a354288a6b2923b994b8a253981814e93db2b34c618f6d08ed9ec2b21db87'
 
   url "https://www.jwz.org/xscreensaver/xscreensaver-#{version}.dmg"
   appcast 'https://www.jwz.org/xscreensaver/changelog.html',
-          checkpoint: '2c5eb73d086c057201a09f1752d9eec633ea505196216a17785bcf2877f9cbc9'
+          checkpoint: 'c9da5c735fdcd864016968208a72f5b0768d4139ffdf64d6a43c2109f466e044'
   name 'XScreenSaver'
   homepage 'https://www.jwz.org/xscreensaver/'
 
@@ -46,6 +46,7 @@ cask 'xscreensaver' do
   screen_saver 'Screen Savers/Compass.saver'
   screen_saver 'Screen Savers/Coral.saver'
   screen_saver 'Screen Savers/Crackberg.saver'
+  screen_saver 'Screen Savers/Crumbler.saver'
   screen_saver 'Screen Savers/Crystal.saver'
   screen_saver 'Screen Savers/Cube21.saver'
   screen_saver 'Screen Savers/Cubenetic.saver'
@@ -136,6 +137,7 @@ cask 'xscreensaver' do
   screen_saver 'Screen Savers/Loop.saver'
   screen_saver 'Screen Savers/m6502.saver'
   screen_saver 'Screen Savers/Maze.saver'
+  screen_saver 'Screen Savers/Maze3D.saver'
   screen_saver 'Screen Savers/MemScroller.saver'
   screen_saver 'Screen Savers/Menger.saver'
   screen_saver 'Screen Savers/MetaBalls.saver'
@@ -153,6 +155,7 @@ cask 'xscreensaver' do
   screen_saver 'Screen Savers/NoseGuy.saver'
   screen_saver 'Screen Savers/Pacman.saver'
   screen_saver 'Screen Savers/Pedal.saver'
+  screen_saver 'Screen Savers/Peepers.saver'
   screen_saver 'Screen Savers/Penetrate.saver'
   screen_saver 'Screen Savers/Penrose.saver'
   screen_saver 'Screen Savers/Petri.saver'
@@ -175,6 +178,7 @@ cask 'xscreensaver' do
   screen_saver 'Screen Savers/QuasiCrystal.saver'
   screen_saver 'Screen Savers/Queens.saver'
   screen_saver 'Screen Savers/RaverHoop.saver'
+  screen_saver 'Screen Savers/RazzleDazzle.saver'
   screen_saver 'Screen Savers/RDbomb.saver'
   screen_saver 'Screen Savers/Ripples.saver'
   screen_saver 'Screen Savers/Rocks.saver'

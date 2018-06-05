@@ -1,11 +1,11 @@
 cask 'subutaip2p' do
-  version '6.2.5'
-  sha256 '9bb401762662d8c2438fdab579cca74fd0d30c1038fc4a926feed6a6b05b8205'
+  version '7.0.0'
+  sha256 '1da9728bd538b7782f71aa742a69c2202faa25593e22dce37a39993504f8e021'
 
-  # cdn.subut.ai:8338/kurjun/rest/raw/ was verified as official when first introduced to the cask
-  url 'https://cdn.subut.ai:8338/kurjun/rest/raw/get?name=subutai-p2p.pkg'
+  # cdn.subutai.io:8338/kurjun/rest/raw was verified as official when first introduced to the cask
+  url 'https://cdn.subutai.io:8338/kurjun/rest/raw/get?name=subutai-p2p.pkg'
   appcast 'https://github.com/subutai-io/p2p/releases.atom',
-          checkpoint: '34501198e26cfeccfe77710a421e85c908a2e1d166b609cf4de5aca1623e66cf'
+          checkpoint: '483912f563dd3c9023b962f897ac69bd4a0e9cb9df9d58e160878a3c82cc8d29'
   name 'Subutai P2P'
   homepage 'https://subutai.io/'
 
@@ -18,5 +18,19 @@ cask 'subutaip2p' do
     system_command '/bin/mv', args: ['--', staged_path.join('get'), staged_path.join('subutai-p2p.pkg')]
   end
 
-  uninstall pkgutil: 'com.Subutai.P2P'
+  uninstall pkgutil:   [
+                         'com.Subutai.P2P',
+                         'net.sf.tuntaposx.tap',
+                         'net.sf.tuntaposx.tun',
+                       ],
+            kext:      [
+                         'net.sf.tuntaposx.tap',
+                         'net.sf.tuntaposx.tun',
+                       ],
+            launchctl: [
+                         'io.subutai.p2p.daemon',
+                         'net.sf.tuntaposx.tap',
+                         'net.sf.tuntaposx.tun',
+                       ],
+            delete:    '/Applications/SubutaiP2P.app'
 end

@@ -1,11 +1,11 @@
 cask 'the-unarchiver' do
-  version '3.11.3,115:1507740941'
-  sha256 '04dc20b845171e25c7137e504cd5a5387a81bdfdc51d2ad810d5fdcf84cff8c6'
+  version '3.11.6,119:1527191272'
+  sha256 '78becd148d5f3cd9a1570751786f364399062b43f576e5a78d9aec3b9450b942'
 
-  # devmate.com/cx.c3.theunarchiver was verified as official when first introduced to the cask
-  url "https://dl.devmate.com/cx.c3.theunarchiver/#{version.after_comma.before_colon}/#{version.after_colon}/TheUnarchiver-#{version.after_comma.before_colon}.zip"
-  appcast 'https://updates.devmate.com/cx.c3.theunarchiver.xml',
-          checkpoint: '1c96c54e3a66a32152a075585833353b2a7973e4f3460c49f597dff60626f5cd'
+  # devmate.com/com.macpaw.site.theunarchiver was verified as official when first introduced to the cask
+  url "https://dl.devmate.com/com.macpaw.site.theunarchiver/#{version.after_comma.before_colon}/#{version.after_colon}/TheUnarchiver-#{version.after_comma.before_colon}.zip"
+  appcast 'https://updates.devmate.com/com.macpaw.site.theunarchiver.xml',
+          checkpoint: '0179cd684e073cdc32de47a7d653059e8ede3ff69abfd7140393012c7a5543f4'
   name 'The Unarchiver'
   homepage 'https://theunarchiver.com/'
 

@@ -1,14 +1,14 @@
 cask 'mimolive' do
-  version '3.2.1-23763'
-  sha256 'b185518d1738af2e325c774d20a1e8f1f918d0005b6d085cf17d4758dfbe2cdc'
+  version '4.1.1-25483'
+  sha256 '401d1d798d3a4cfb0f0322e6e18cd614bc1fef4b9b960560cd5670dda6303d12'
 
   url "https://cdn.boinx.com/software/mimolive/Boinx_mimoLive_#{version}.app.zip"
   appcast 'https://boinx.com/d/connect/histories/mimolive',
-          checkpoint: '3ad0af88a9729b848c46e38c38f68c576efb49118817a6ca952dff8cea84f101'
+          checkpoint: 'a076bee0843f59cf14ed861337a710e3e48b3045246343fc7254064f6ea87c9b'
   name 'mimoLive'
   homepage 'https://boinx.com/mimolive/'
 
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :el_capitan'
 
   app 'mimoLive.app'
 end

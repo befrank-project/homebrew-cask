@@ -1,16 +1,16 @@
 cask 'copyq' do
-  version '3.2.0'
-  sha256 '6e72f41bb4e899493844b2d4affdcc8735b2b9984bff1ea0b7bdb329aaa624f9'
+  version '3.4.0'
+  sha256 '8b8f066c1383debb23d0e2e4832f42f889ec0d830410a3da6115a4dd3a8d6810'
 
   # github.com/hluk/CopyQ was verified as official when first introduced to the cask
   url "https://github.com/hluk/CopyQ/releases/download/v#{version}/CopyQ.dmg"
   appcast 'https://github.com/hluk/CopyQ/releases.atom',
-          checkpoint: '54d7387e3b126e000d06a0079f14330d73f68e4e57d6c67c355e1ef8b0f0769e'
+          checkpoint: 'e5569c6f53e7b2ee83a40b6e146fa58809c8ffddd769238eb0bc7047184612cf'
   name 'CopyQ'
   homepage 'https://hluk.github.io/CopyQ/'
 
   app 'CopyQ.app'
-  # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/copyq.wrapper.sh"
   binary shimscript, target: 'copyq'
 

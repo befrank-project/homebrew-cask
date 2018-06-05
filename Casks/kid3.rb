@@ -1,11 +1,11 @@
 cask 'kid3' do
   # note: "3" is not a version number, but an intrinsic part of the product name (ID3 tags)
-  version '3.5.1'
-  sha256 'a601637270b6a90774d3486fa1f6726dc9e4ae8d653220ab9b66d510d5cab60d'
+  version '3.6.1'
+  sha256 '07844015af79674461e9cf46eef5991aac02cbeecd9dee9b88c33200b4a508e2'
 
   url "https://downloads.sourceforge.net/kid3/kid3-#{version}-Darwin.dmg"
   appcast 'https://sourceforge.net/projects/kid3/rss',
-          checkpoint: '63fc23772c0c7a7fd284922bd27d5e9e388225cbd7bd9f62ffe1a916c7b36ec2'
+          checkpoint: '9f70ca398a4588a6175ef15aa998627b2bd3b61931cd72c44345495d2aaa2b81'
   name 'Kid3'
   homepage 'http://kid3.sourceforge.net/'
 

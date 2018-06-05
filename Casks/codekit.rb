@@ -1,10 +1,10 @@
 cask 'codekit' do
-  version '3.5.1,26268'
-  sha256 'cf551122cb603e48a30955f9060514b5f4c1951537a2898a2d85393fe78b56a3'
+  version '3.6.1,26680'
+  sha256 'b1e3b7ff805bca2a017a7d6c2018d58bcdceb7cb135135db6747b49129085272'
 
   url "https://codekitapp.com/binaries/codekit-#{version.after_comma}.zip"
   appcast "https://codekitapp.com/api/#{version.major}/appcast.xml",
-          checkpoint: '2ccada7d8160728f792c78ac4e9481f53ef4d023f5f479ef5739ece3bc8d28fb'
+          checkpoint: '8106a048d789e6324815660b06952b2dc7b25ddf27121d462d196e892c75b3aa'
   name 'CodeKit'
   homepage 'https://codekitapp.com/'
 

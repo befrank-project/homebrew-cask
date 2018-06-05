@@ -1,17 +1,19 @@
 cask 'portfolioperformance' do
-  version '0.29.0'
-  sha256 'e1f5536bcd8d8b79e2e1d8056e36be8cd3fecb30387687f60c2a5ae5888aae9f'
+  version '0.31.2'
+  sha256 '91fa5edb63109b6b623d8fc10f8ff71423b2b68093e7b00b5b1cf0e9acee55ef'
 
-  # s3.amazonaws.com/name.abuchen.portfolio was verified as official when first introduced to the cask
-  url "https://s3.amazonaws.com/name.abuchen.portfolio/#{version}/PortfolioPerformance-#{version}-macosx.cocoa.x86_64.tar.gz"
+  # bintray.com/buchen/downloads was verified as official when first introduced to the cask
+  url "https://bintray.com/buchen/downloads/download_file?file_path=#{version}%2FPortfolioPerformance-#{version}-macosx.cocoa.x86_64.tar.gz"
   appcast 'https://github.com/buchen/portfolio/releases.atom',
-          checkpoint: 'ec20e1315a62d45ddf35877aa052e2603862dfec05d64d883864838a4ce56731'
+          checkpoint: '58ef91436486941137add45e0e8a9172aab35db05c9b0192b6106047cb96aae7'
   name 'Portfolio Performance'
   homepage 'http://www.portfolio-performance.info/portfolio/'
+
+  auto_updates true
 
   app 'PortfolioPerformance.app'
 
   caveats do
-    depends_on_java('8+')
+    depends_on_java '8+'
   end
 end

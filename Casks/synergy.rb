@@ -1,8 +1,8 @@
 cask 'synergy' do
-  version '2.0.5,b1462-3f23b557'
-  sha256 '8ead0011ecafe430ce1670cfadf7b614b9112fd33f1669f00d9c50ecb43ebc0c'
+  version '2.0.12,b1807-50472cde'
+  sha256 '41927a6a52a523797122a7d6a9c8817d09cce9966ad08118c693345f51aa41e9'
 
-  url "https://binaries.symless.com/v#{version.before_comma}/Synergy_v#{version.before_comma}-stable_#{version.after_comma}.dmg"
+  url "https://binaries.symless.com/v#{version.before_comma}/Synergy_v#{version.before_comma}-beta_#{version.after_comma}.dmg"
   name 'Synergy'
   homepage 'https://symless.com/synergy'
 

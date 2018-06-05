@@ -1,14 +1,15 @@
 cask 'java' do
-  version '9.0.4,11:c2514751926b4512b076cc82f959763f'
-  sha256 'f5c827ab4c3cf380827199005a3dfe8077a38c4d6e8b3fa37ec19ce6ca9aa658'
+  version '10.0.1,10:fb4372174a714e6b8c52526dc134031e'
+  sha256 'cf3d33be870788eed5bb5eeef8f52aa9d7601955c8742efbec0cf9fbd6245ceb'
 
   url "http://download.oracle.com/otn-pub/java/jdk/#{version.before_comma}+#{version.after_comma.before_colon}/#{version.after_colon}/jdk-#{version.before_comma}_osx-x64_bin.dmg",
       cookies: {
                  'oraclelicense' => 'accept-securebackup-cookie',
                }
   name 'Java Standard Edition Development Kit'
-  homepage "https://www.oracle.com/technetwork/java/javase/downloads/jdk#{version.major}-downloads-3848520.html"
+  homepage "https://www.oracle.com/technetwork/java/javase/downloads/jdk#{version.major}-downloads-4416644.html"
 
+  # auto_updates true: JDK does not auto-update
   depends_on macos: '>= :yosemite'
 
   pkg "JDK #{version.before_comma}.pkg"
@@ -58,7 +59,8 @@ cask 'java' do
                          '/Library/PreferencePanes/JavaControlPanel.prefPane',
                          '/Library/Java/Home',
                          '/Library/Java/MacOS',
-                       ]
+                       ],
+            rmdir:     "/Library/Java/JavaVirtualMachines/jdk-#{version.before_comma}.jdk"
 
   zap trash: [
                '/Library/Application Support/Oracle/Java',
@@ -75,22 +77,19 @@ cask 'java' do
              ],
       rmdir: [
                '/Library/Application Support/Oracle/',
-               "/Library/Java/JavaVirtualMachines/jdk-#{version.before_comma}.jdk",
                '~/Library/Application Support/Oracle/',
              ]
 
-  caveats <<~EOS
-    This Cask makes minor modifications to the JRE to prevent issues with
-    packaged applications, as discussed here:
+  caveats do
+    license 'https://www.oracle.com/technetwork/java/javase/terms/license/index.html'
+    <<~EOS
+      This Cask makes minor modifications to the JRE to prevent issues with
+      packaged applications, as discussed here:
 
-      https://bugs.eclipse.org/bugs/show_bug.cgi?id=411361
+        https://bugs.eclipse.org/bugs/show_bug.cgi?id=411361
 
-    If your Java application still asks for JRE installation, you might need
-    to reboot or logout/login.
-
-    Installing this Cask means you have AGREED to the Oracle Binary Code
-    License Agreement for Java SE at
-
-      https://www.oracle.com/technetwork/java/javase/terms/license/index.html
-  EOS
+      If your Java application still asks for JRE installation, you might need
+      to reboot or logout/login.
+    EOS
+  end
 end

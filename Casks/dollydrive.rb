@@ -1,10 +1,10 @@
 cask 'dollydrive' do
-  version '3.99,39987'
-  sha256 '3644739ed8dece5c2f9f1ff6d50bd184907599566e7a4c20a789959d86b03e3c'
+  version '3.99,39996'
+  sha256 '5bdc7492102302684c4cb1b6f5c1673afc1ef432073a911b4f3dd8a4aa3a232d'
 
   url "http://dollydrive.com/download-center/dollydrive/DollyDrive_#{version.before_comma}_#{version.after_comma}_CERTIFIED.zip"
   appcast "http://www.dollydrive.com/dolly#{version.major}.xml",
-          checkpoint: '69c3bbbc40c30294e9c2522add974a59ded347b23a87036b722aacb8e61a91c5'
+          checkpoint: '054f899600656ad6e38548c31994edffbc1dbb589ed7db58dbcb9ae8fc503de5'
   name 'DollyDrive'
   homepage 'http://www.dollydrive.com/'
 

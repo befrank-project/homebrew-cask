@@ -1,11 +1,11 @@
 cask 'devrantron' do
-  version '1.5.2'
-  sha256 '5fb8b5076fcc41de40df126f75d685f16d42d2e14b41eb57e4acad25f198a3e7'
+  version '1.5.4'
+  sha256 '0f8ff90fe170f66932d1f044a33501c3e600729c15d0eeafe128b6e7c15757c1'
 
   # github.com/tahnik/devRantron was verified as official when first introduced to the cask
   url "https://github.com/tahnik/devRantron/releases/download/v#{version}/devrantron-#{version}.dmg"
   appcast 'https://github.com/tahnik/devRantron/releases.atom',
-          checkpoint: 'b4c2e4a0616d5f116eebb0b93e1fbd637ca95e9a26fea5fe5c0bae1902a9540e'
+          checkpoint: '4689266365a4f84e78dd1fbb667117684485e85f9d4ef82428ef77e1db88bd48'
   name 'devRantron'
   homepage 'https://devrantron.firebaseapp.com/'
 

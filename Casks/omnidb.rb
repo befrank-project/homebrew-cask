@@ -1,6 +1,6 @@
 cask 'omnidb' do
-  version '2.5.0'
-  sha256 '61467b79b746ad682098c55525321f03de2218c64deb177abea45943f7567ed3'
+  version '2.8.0'
+  sha256 '22f3f4676da159355590a3a66150cea3d57888122ba619e748863c6c846af82e'
 
   url "https://omnidb.org/dist/#{version}/omnidb-app_#{version}-mac.dmg"
   name 'OmniDB'

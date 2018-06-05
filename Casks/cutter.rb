@@ -1,17 +1,18 @@
 cask 'cutter' do
-  version '1.2'
-  sha256 '9d5cc522e2d571746c9df89bce5528a81b85e31ccaee3d8e79933ea1eb944892'
+  version '1.4'
+  sha256 '78cefb1b0f28f76d749694ba3e953c8a64b0505c7788aa89569bb6039711d200'
 
   # github.com/radareorg/cutter was verified as official when first introduced to the cask
-  url "https://github.com/radareorg/cutter/releases/download/v#{version}/cutter-v#{version}.dmg"
+  url "https://github.com/radareorg/cutter/releases/download/v#{version}/Cutter-v#{version}.dmg"
   appcast 'https://github.com/radareorg/cutter/releases.atom',
-          checkpoint: 'efac4ee3bcb6ecddaf748d3a86012553de50c366a09bfb54c6c137dc445651d5'
+          checkpoint: '9a701c98fea005734f0c3b28edf585bb9ce09eae138531c1aeb13e61ab42e1c5'
   name 'Cutter'
   homepage 'https://radare.org/cutter/'
 
-  app 'cutter.app'
+  app 'Cutter.app'
 
   zap trash: [
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/test.cutter.sfl*',
                '~/Library/Preferences/com.cutter.cutter.plist*',
                '~/Library/Preferences/test.cutter.plist',
                '~/Library/Saved Application State/test.cutter.savedState',
